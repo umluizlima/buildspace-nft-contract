@@ -1,15 +1,33 @@
-# Basic Sample Hardhat Project
+# buildspace-nft-contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This repo contains the contract developed during [Buildspace's NFT course](https://app.buildspace.so/projects/CO961ddb5f-f428-4608-9949-a9a2f461eb3f).
 
-Try running some of the following tasks:
+## Development
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+1. Install dependencies;
+    ```shell
+    npm install
+    ```
+
+2. Create a `.env` file and add secrets to it;
+
+3. Run
+    ```shell
+    npx hardhat run scripts/run.js --network hardhat
+    ```
+
+## Deployment
+
+1. Deploy to `rinkeby` testnet;
+    ```shell
+    npx hardhat run scripts/deploy.js --network rinkeby
+    ```
+
+2. Copy the contract address that is printed to console at the end of previous step;
+
+3. Verify the contract on `etherscan`;
+    ```shell
+    npx hardhat verify CONTRACT_ADDRESS --network rinkeby
+    ```
+
+4. Check the link that is printed to console at the end of previous step;
