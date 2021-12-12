@@ -2,6 +2,8 @@
 
 This repo contains the contract developed during [Buildspace's NFT course](https://app.buildspace.so/projects/CO961ddb5f-f428-4608-9949-a9a2f461eb3f).
 
+Frontend [here](https://github.com/umluizlima/buildspace-nft-frontend).
+
 ## Development
 
 1. Install dependencies;
